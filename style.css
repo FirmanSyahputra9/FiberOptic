@@ -34,7 +34,11 @@ body {
   button:hover {
     background-color: #0056b3;
   }
-  
+
+.submit{
+    margin-left: 80%;
+  }
+
   .answer {
     display: none;
     color: green;
