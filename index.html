@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiber Optics Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fiber Optics Quiz</h1>
+    <form id="quizForm">
+      
+      <div class="question">
+        <p>1. What is fiber optics?</p>
+        <label><input type="radio" name="q1" value="a"> a) Metal wire for conducting electricity</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Thin glass or plastic fibers used to transmit data using light</label><br>
+        <label><input type="radio" name="q1" value="c"> c) A wireless communication tool</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Digital signals transmitted through the air</label>
+        <button type="button" onclick="toggleAnswer(1)">Show</button>
+        <p id="answer1" class="answer">Correct answer: b) Thin glass or plastic fibers used to transmit data using light</p>
+      </div>
+
+      <div class="question">
+        <p>2. The main components of fiber optic cables are:</p>
+        <label><input type="radio" name="q2" value="a"> a) Copper wire and insulator</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Core and cladding</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Connectors and cable</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Fiber and plastic</label>
+        <button type="button" onclick="toggleAnswer(2)">Show</button>
+        <p id="answer2" class="answer">Correct answer: b) Core and cladding</p>
+      </div>
+
+      <div class="question">
+        <p>3. Who is NOT known as the "father of fiber optics"?</p>
+        <label><input type="radio" name="q3" value="a"> a) Charles Kao</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Narinder Singh Kapany</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Samuel Bonardy Hutagalung</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Jun-ichi Nishizawa</label>
+        <button type="button" onclick="toggleAnswer(3)">Show</button>
+        <p id="answer3" class="answer">Correct answer: c) Samuel Bonardy Hutagalung</p>
+      </div>
+
+      <div class="question">
+        <p>4. The first successful application of fiber optic technology appeared with the invention of the gastroscope in:</p>
+        <label><input type="radio" name="q4" value="a"> a) 1942</label><br>
+        <label><input type="radio" name="q4" value="b"> b) 1975</label><br>
+        <label><input type="radio" name="q4" value="c"> c) 1956</label><br>
+        <label><input type="radio" name="q4" value="d"> d) 1983</label>
+        <button type="button" onclick="toggleAnswer(4)">Show</button>
+        <p id="answer4" class="answer">Correct answer: c) 1956</p>
+      </div>
+
+      <div class="question">
+        <p>5. Today, fiber optic cables are primarily used for:</p>
+        <label><input type="radio" name="q5" value="a"> a) Connecting computers to printers</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Transmitting various forms of long-distance communication</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Sending radio signals</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Connecting audio devices</label>
+        <button type="button" onclick="toggleAnswer(5)">Show</button>
+        <p id="answer5" class="answer">Correct answer: b) Transmitting various forms of long-distance communication</p>
+      </div>
+
+      <div class="question">
+        <p>6. One of the advantages of fiber optics compared to copper is:</p>
+        <label><input type="radio" name="q6" value="a"> a) Lower cost</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Higher bandwidth</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Easier to install</label><br>
+        <label><input type="radio" name="q6" value="d"> d) Lighter weight</label>
+        <button type="button" onclick="toggleAnswer(6)">Show</button>
+        <p id="answer6" class="answer">Correct answer: b) Higher bandwidth</p>
+      </div>
+
+      <div class="question">
+        <p>7. Which of the following is NOT a main disadvantage of fiber optics compared to copper cables?</p>
+        <label><input type="radio" name="q7" value="a"> a) Can be found everywhere</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Higher cost</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Difficult to repair</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Susceptible to physical damage</label>
+        <button type="button" onclick="toggleAnswer(7)">Show</button>
+        <p id="answer7" class="answer">Correct answer: a) Can be found everywhere</p>
+      </div>
+
+      <div class="question">
+        <p>8. What is a characteristic of multimode fiber optics?</p>
+        <label><input type="radio" name="q8" value="a"> a) Small diameter and supports long-distance transmission</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Has a core diameter five to ten times larger than single-mode fiber</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Used for long-distance transmission with laser signals</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Specifically designed for satellite communication</label>
+        <button type="button" onclick="toggleAnswer(8)">Show</button>
+        <p id="answer8" class="answer">Correct answer: b) Has a core diameter five to ten times larger than single-mode fiber</p>
+      </div>
+
+      <div class="question">
+        <p>9. What is a characteristic of single-mode fiber optics?</p>
+        <label><input type="radio" name="q9" value="a"> a) Has a wide core and can transmit signals in various directions</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Has a thin core, and light signals travel straight through the fiber without bouncing off the sides</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Designed for short-distance transmission</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Uses sound signals instead of light</label>
+        <button type="button" onclick="toggleAnswer(9)">Show</button>
+        <p id="answer9" class="answer">Correct answer: b) Has a thin core, and light signals travel straight through the fiber without bouncing off the sides</p>
+      </div>
+
+      <div class="question">
+        <p>10. What is the transmission distance difference between multimode and single-mode?</p>
+        <label><input type="radio" name="q10" value="a"> a) In multimode, signals travel long distances, while in single-mode, the transmission distance is limited</label><br>
+        <label><input type="radio" name="q10" value="b"> b) In single-mode, signals can transmit over longer distances than in multimode</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Multimode uses lasers for long-distance, while single-mode uses LEDs for shorter distances</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Multimode is better for long-distance transmission</label>
+        <button type="button" onclick="toggleAnswer(10)">Show</button>
+        <p id="answer10" class="answer">Correct answer: b) In single-mode, signals can transmit over longer distances than in multimode</p>
+      </div>
+
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
